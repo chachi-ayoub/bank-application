@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Menu">
+   <children>
+    <AnchorPane layoutY="-2.0" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="237.0">
+         <children>
+            <TabPane layoutX="14.0" layoutY="2.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #303030;" stylesheets="@application.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-363.0" AnchorPane.topAnchor="2.0">
+              <tabs>
+                <Tab text="Deposite">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0">
+                           <children>
+                              <ImageView fitHeight="400.0" fitWidth="600.0">
+                                 <image>
+                                    <Image url="@../../../images/network-mesh-wire-digital-technology-background_1017-27428.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="23.0" layoutY="93.0" mnemonicParsing="false" onAction="#dAdd200" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="200 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="23.0" layoutY="150.0" mnemonicParsing="false" onAction="#dAdd500" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="500 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="23.0" layoutY="200.0" mnemonicParsing="false" onAction="#dAdd1000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="1000 DH" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <Button contentDisplay="CENTER" layoutX="394.0" layoutY="46.0" mnemonicParsing="false" onAction="#dAdd2000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text=" 2000 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="394.0" layoutY="95.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#dAdd3000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="3000 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="141.0" layoutY="292.0" mnemonicParsing="false" onAction="#dProceed" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #1998a6; -fx-background-radius: 45;" text="PROCEED" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="394.0" layoutY="150.0" mnemonicParsing="false" onAction="#dAdd5000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="5000 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="394.0" layoutY="200.0" mnemonicParsing="false" onAction="#dAdd10000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="10000 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="deposit" layoutX="222.0" layoutY="250.0" prefHeight="17.0" prefWidth="67.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;" text="0">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </TextField>
+                              <Label alignment="TOP_RIGHT" layoutX="130.0" layoutY="248.0" maxWidth="-Infinity" prefHeight="29.0" prefWidth="87.0" text="Deposit :" textFill="#0a0a0a">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <VBox layoutX="142.0" layoutY="110.0" prefHeight="70.0" prefWidth="189.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" />
+                              <Label layoutX="155.0" layoutY="106.0" prefHeight="42.0" prefWidth="162.0" text="CURRENT BALANCE :" textFill="#030303">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="262.0" layoutY="140.0" prefHeight="34.0" prefWidth="51.0" text="MAD" textFill="#141414">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="balance" layoutX="156.0" layoutY="141.0" prefHeight="30.0" prefWidth="105.0" text="0" textFill="#111111">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="245.0" layoutY="292.0" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #1998a6; -fx-background-radius: 25;" text="RESET" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="TOP_RIGHT" layoutX="290.0" layoutY="249.0" maxWidth="-Infinity" prefHeight="29.0" prefWidth="44.0" text="MAD" textFill="#0a0a0a">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <VBox alignment="TOP_CENTER" layoutX="462.0" prefHeight="400.0" prefWidth="138.0" style="-fx-background-color: #ADD8E6;">
+                                 <children>
+                                    <HBox prefHeight="32.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="32.0" prefWidth="71.0">
+                                             <children>
+                                                <Label prefHeight="24.0" prefWidth="56.0" text="Username:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="32.0" prefWidth="85.0">
+                                             <children>
+                                                <Label fx:id="username" prefHeight="24.0" prefWidth="73.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="3.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="16.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="20.0" prefWidth="40.0">
+                                             <children>
+                                                <Label text="ID:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="128.0">
+                                             <children>
+                                                <Label fx:id="id" prefHeight="16.0" prefWidth="112.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#signOut" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: black; -fx-background-radius: 7;" text="Sign out" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <Button layoutX="23.0" layoutY="46.0" mnemonicParsing="false" onAction="#dAdd100" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="100 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Withdraw">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="497.0" prefWidth="737.0">
+                           <children>
+                              <ImageView fitHeight="400.0" fitWidth="600.0">
+                                 <image>
+                                    <Image url="@../../../images/network-mesh-wire-digital-technology-background_1017-27428.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="TOP_RIGHT" layoutX="115.0" layoutY="248.0" maxWidth="-Infinity" prefHeight="28.0" prefWidth="106.0" text="Withdraw : " textFill="#0a0a0a">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="withdraw" layoutX="222.0" layoutY="250.0" prefHeight="17.0" prefWidth="67.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;" text="0">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </TextField>
+                              <Button layoutX="23.0" layoutY="46.0" mnemonicParsing="false" onAction="#wAdd100" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="100 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="23.0" layoutY="93.0" mnemonicParsing="false" onAction="#wAdd200" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="200 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="23.0" layoutY="150.0" mnemonicParsing="false" onAction="#wAdd500" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="500 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="23.0" layoutY="200.0" mnemonicParsing="false" onAction="#wAdd1000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="1000 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button contentDisplay="CENTER" layoutX="394.0" layoutY="46.0" mnemonicParsing="false" onAction="#wAdd2000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text=" 2000 DH " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="394.0" layoutY="95.0" mnemonicParsing="false" onAction="#wAdd3000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="3000 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="394.0" layoutY="150.0" mnemonicParsing="false" onAction="#wAdd5000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="5000 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="394.0" layoutY="200.0" mnemonicParsing="false" onAction="#wAdd10000" opacity="0.8" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 12;" text="10000 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="9.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="141.0" layoutY="292.0" mnemonicParsing="false" onAction="#wProceed" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #1998a6; -fx-background-radius: 45;" text="PROCEED" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="245.0" layoutY="292.0" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #1998a6; -fx-background-radius: 45;" text="RESET" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="balance1" layoutX="156.0" layoutY="141.0" prefHeight="30.0" prefWidth="112.0" text="0" textFill="#111111">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="262.0" layoutY="140.0" prefHeight="34.0" prefWidth="51.0" text="MAD" textFill="#141414">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <VBox layoutX="142.0" layoutY="110.0" prefHeight="70.0" prefWidth="189.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" />
+                              <Label layoutX="155.0" layoutY="106.0" prefHeight="42.0" prefWidth="169.0" text="CURRENT BALANCE :" textFill="#030303">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_RIGHT" layoutX="290.0" layoutY="249.0" maxWidth="-Infinity" prefHeight="11.0" prefWidth="44.0" text="MAD" textFill="#0a0a0a">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <VBox alignment="TOP_CENTER" layoutX="462.0" prefHeight="400.0" prefWidth="138.0" style="-fx-background-color: #ADD8E6;">
+                                 <children>
+                                    <HBox prefHeight="32.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="32.0" prefWidth="71.0">
+                                             <children>
+                                                <Label prefHeight="24.0" prefWidth="56.0" text="Username:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="32.0" prefWidth="85.0">
+                                             <children>
+                                                <Label fx:id="username1" prefHeight="24.0" prefWidth="73.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="3.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="16.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="20.0" prefWidth="40.0">
+                                             <children>
+                                                <Label text="ID:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="128.0">
+                                             <children>
+                                                <Label fx:id="id1" prefHeight="16.0" prefWidth="112.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#signOut" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: black; -fx-background-radius: 7;" text="Sign out" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Money Transfer">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0">
+                           <children>
+                              <ImageView fitHeight="400.0" fitWidth="600.0">
+                                 <image>
+                                    <Image url="@../../../images/network-mesh-wire-digital-technology-background_1017-27428.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="78.0" layoutY="136.0" text="Customer ID" textFill="#0a0a0a">
+                                 <font>
+                                    <Font name="System Bold Italic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="72.0" layoutY="192.0" prefHeight="47.0" prefWidth="129.0" text="Amount" textFill="#0a0a0a">
+                                 <font>
+                                    <Font name="System Bold Italic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tId" layoutX="218.0" layoutY="139.0" prefHeight="20.0" prefWidth="187.0" promptText="Enter Id" style="-fx-background-color: TRANSPARENT; -fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;" styleClass="border">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="tAmount" layoutX="218.0" layoutY="203.0" prefHeight="20.0" prefWidth="187.0" promptText="Ammount" style="-fx-background-color: TRANSPARENT; -fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </TextField>
+                              <Button layoutX="207.0" layoutY="270.0" mnemonicParsing="false" onAction="#transferMoney" prefHeight="40.0" prefWidth="187.0" style="-fx-background-color: #1998a6; -fx-background-radius: 45;" text="Transfer Money" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="20.0" />
+                                 </font>
+                              </Button>
+                              <VBox alignment="TOP_CENTER" layoutX="462.0" prefHeight="400.0" prefWidth="138.0" style="-fx-background-color: #ADD8E6;">
+                                 <children>
+                                    <HBox prefHeight="32.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="32.0" prefWidth="71.0">
+                                             <children>
+                                                <Label prefHeight="24.0" prefWidth="56.0" text="Username:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="32.0" prefWidth="85.0">
+                                             <children>
+                                                <Label fx:id="username2" prefHeight="24.0" prefWidth="73.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="3.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="16.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="20.0" prefWidth="40.0">
+                                             <children>
+                                                <Label text="ID:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="128.0">
+                                             <children>
+                                                <Label fx:id="id2" prefHeight="16.0" prefWidth="112.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#signOut" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: black; -fx-background-radius: 7;" text="Sign out" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="73.0" layoutY="49.0" prefHeight="43.0" prefWidth="341.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label contentDisplay="CENTER" prefHeight="25.0" prefWidth="169.0" text="CURRENT BALANCE :" textFill="#0a0a0a">
+                                       <font>
+                                          <Font name="System Bold Italic" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="balance2" contentDisplay="CENTER" prefHeight="0.0" prefWidth="112.0" text="0" textFill="#111111">
+                                       <font>
+                                          <Font name="System Bold Italic" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label contentDisplay="CENTER" prefHeight="0.0" prefWidth="57.0" text="MAD" textFill="#141414">
+                                       <font>
+                                          <Font name="System Bold Italic" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Change Details">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0">
+                           <children>
+                              <ImageView fitHeight="400.0" fitWidth="600.0">
+                                 <image>
+                                    <Image url="@../../../images/network-mesh-wire-digital-technology-background_1017-27428.jpg" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" layoutX="-3.0" layoutY="42.0" prefHeight="206.0" prefWidth="458.0" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="42.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="526.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="87.0" prefWidth="200.0">
+                                             <children>
+                                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="65.0" text="First Name:" textFill="#0a0a0a">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fname" prefHeight="27.0" prefWidth="166.0" style="-fx-background-radius: 10; -fx-border-color: #000; -fx-border-radius: 10;">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="58.0" prefWidth="200.0">
+                                             <children>
+                                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Last Name:" textFill="#111111">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="lname" prefHeight="20.0" prefWidth="200.0" style="-fx-background-radius: 10; -fx-border-color: #000; -fx-border-radius: 10;">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="40.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="600.0">
+                                       <children>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="59.0" prefWidth="200.0">
+                                             <children>
+                                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Phone Number:" textFill="#0d0d0d">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="phoneno" prefHeight="20.0" prefWidth="200.0" style="-fx-background-radius: 10; -fx-border-color: #000; -fx-border-radius: 10;">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="59.0" prefWidth="200.0">
+                                             <children>
+                                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Email Address:" textFill="#111111">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="email" prefHeight="20.0" prefWidth="200.0" style="-fx-background-radius: 10; -fx-border-color: #000; -fx-border-radius: 10;">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="40.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="600.0">
+                                       <children>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="72.0" prefWidth="200.0">
+                                             <children>
+                                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Date of Birth:" textFill="#0d0d0d">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="dob" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="15.0" style="-fx-border-color: #000;">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                </DatePicker>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="72.0" prefWidth="200.0">
+                                             <children>
+                                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Gender:" textFill="#111010">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="gender" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="200.0" promptText="Select your gender" style="-fx-border-color: #000; -fx-border-radius: 10; -fx-background-radius: 10;">
+                                                   <VBox.margin>
+                                                      <Insets left="7.0" right="7.0" />
+                                                   </VBox.margin>
+                                                </ComboBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="40.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" layoutX="462.0" prefHeight="400.0" prefWidth="138.0" style="-fx-background-color: #ADD8E6;">
+                                 <children>
+                                    <HBox prefHeight="32.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="32.0" prefWidth="71.0">
+                                             <children>
+                                                <Label prefHeight="24.0" prefWidth="56.0" text="Username:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="32.0" prefWidth="85.0">
+                                             <children>
+                                                <Label fx:id="username3" prefHeight="24.0" prefWidth="73.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="3.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="16.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="20.0" prefWidth="40.0">
+                                             <children>
+                                                <Label text="ID:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="128.0">
+                                             <children>
+                                                <Label fx:id="id3" prefHeight="16.0" prefWidth="112.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#signOut" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: black; -fx-background-radius: 7;" text="Sign out" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <Button layoutX="260.0" layoutY="277.0" mnemonicParsing="false" onAction="#update" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #1998a6; -fx-background-radius: 40;" text="Update" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="59.0" layoutY="277.0" mnemonicParsing="false" onAction="#close" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #FF8C00; -fx-background-radius: 40;" text="Close Account" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                   <Tab text="Request a Loan">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <children>
+                              <ImageView fitHeight="400.0" fitWidth="600.0">
+                                 <image>
+                                    <Image url="@../../../images/network-mesh-wire-digital-technology-background_1017-27428.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="169.0" layoutY="213.0" mnemonicParsing="false" onAction="#takeacredit" prefHeight="38.0" prefWidth="165.0" style="-fx-background-color: #1998a6 #1998a6; -fx-background-radius: 40;" text="TAKE A CREDIT" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="TOP_RIGHT" layoutX="-90.0" layoutY="158.0" maxWidth="-Infinity" prefHeight="55.0" prefWidth="307.0" text="Amount:" textFill="#0a0a0a">
+                                 <font>
+                                    <Font name="System Bold Italic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Credit" layoutX="271.0" layoutY="161.0" prefHeight="18.0" prefWidth="158.0" promptText="0" style="-fx-background-color: #000; -fx-background-radius: 20;">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </TextField>
+                              <Label alignment="TOP_RIGHT" layoutX="7.0" layoutY="100.0" maxWidth="-Infinity" prefHeight="55.0" prefWidth="210.0" text="Installment on:" textFill="#0a0a0a">
+                                 <font>
+                                    <Font name="System Bold Italic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" layoutX="65.0" layoutY="31.0" opacity="0.68" prefHeight="58.0" prefWidth="336.0" text="APPLY FOR A LOAN" textFill="#00003f">
+                                 <font>
+                                    <Font name="System Bold Italic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="INSTALLMENT" layoutX="273.0" layoutY="100.0" prefHeight="37.0" prefWidth="153.0" promptText="Months" visibleRowCount="20" />
+                              <VBox alignment="TOP_CENTER" layoutX="462.0" prefHeight="400.0" prefWidth="138.0" style="-fx-background-color: #ADD8E6;">
+                                 <children>
+                                    <HBox prefHeight="32.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="32.0" prefWidth="71.0">
+                                             <children>
+                                                <Label prefHeight="24.0" prefWidth="56.0" text="Username:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="32.0" prefWidth="85.0">
+                                             <children>
+                                                <Label fx:id="username4" prefHeight="24.0" prefWidth="73.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="3.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="16.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="20.0" prefWidth="40.0">
+                                             <children>
+                                                <Label text="ID:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="128.0">
+                                             <children>
+                                                <Label fx:id="id4" prefHeight="16.0" prefWidth="112.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#signOut" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: black; -fx-background-radius: 7;" text="Sign out" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Loan Informations">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="400.0" fitWidth="600.0">
+                                 <image>
+                                    <Image url="@../../../images/network-mesh-wire-digital-technology-background_1017-27428.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="100.0" layoutY="31.0" opacity="0.68" text="LOAN INFORMATION" textFill="#00003f">
+                                 <font>
+                                    <Font name="System Bold Italic" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="52.0" layoutY="74.0" prefHeight="52.0" prefWidth="143.0" text="Remaining Months:" textFill="#030303">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="51.0" layoutY="126.0" prefHeight="40.0" prefWidth="137.0" text="Remaining Loan:" textFill="#0a0a0a">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="rmonth3" layoutX="211.0" layoutY="87.0" prefHeight="26.0" prefWidth="119.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="rloan3" layoutX="211.0" layoutY="131.0" prefHeight="31.0" prefWidth="141.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="51.0" layoutY="184.0" prefHeight="20.0" prefWidth="128.0" text="Price Per Month:" textFill="#0d0d0d">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="51.0" layoutY="225.0" text="Date of Credit:" textFill="#070707">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="pmonth3" layoutX="211.0" layoutY="177.0" prefHeight="35.0" prefWidth="153.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="datef" layoutX="207.0" layoutY="217.0" prefHeight="36.0" prefWidth="186.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="196.0" layoutY="271.0" mnemonicParsing="false" onAction="#payi" prefHeight="43.0" prefWidth="208.0" style="-fx-background-color: #1998a6; -fx-background-radius: 40;" text="Pay An Installment" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <VBox alignment="TOP_CENTER" layoutX="462.0" prefHeight="400.0" prefWidth="138.0" style="-fx-background-color: #ADD8E6;">
+                                 <children>
+                                    <HBox prefHeight="32.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="32.0" prefWidth="71.0">
+                                             <children>
+                                                <Label prefHeight="24.0" prefWidth="56.0" text="Username:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="32.0" prefWidth="85.0">
+                                             <children>
+                                                <Label fx:id="username5" prefHeight="24.0" prefWidth="73.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="3.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="16.0" prefWidth="138.0">
+                                       <children>
+                                          <VBox prefHeight="20.0" prefWidth="40.0">
+                                             <children>
+                                                <Label text="ID:">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="128.0">
+                                             <children>
+                                                <Label fx:id="id5" prefHeight="16.0" prefWidth="112.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#signOut" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: black; -fx-background-radius: 7;" text="Sign out" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Operations">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="400.0" fitWidth="600.0">
+                                 <image>
+                                    <Image url="@../../../images/network-mesh-wire-digital-technology-background_1017-27428.jpg" />
+                                 </image>
+                              </ImageView>
+                              <TableView fx:id="table" layoutX="47.0" layoutY="39.0" prefHeight="229.0" prefWidth="525.0">
+                                <columns>
+                                  <TableColumn fx:id="ido" prefWidth="40.0" text="id" />
+                                  <TableColumn fx:id="nameo" prefWidth="72.0" text="First Name" />
+                                    <TableColumn fx:id="lnameo" prefWidth="96.0" text="Last Name" />
+                                    <TableColumn fx:id="typeo" prefWidth="105.0" text="Type D'operation" />
+                                    <TableColumn fx:id="dateo" prefWidth="128.0" text="Date" />
+                                    <TableColumn fx:id="amounto" prefWidth="83.0" text="Amount" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="252.0" layoutY="290.0" mnemonicParsing="false" onAction="#refresh" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #1998a6; -fx-background-radius: 16;" text="Refresh" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           </AnchorPane>
+                           </content>
+                           </Tab>
+              </tabs>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
