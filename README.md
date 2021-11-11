@@ -1,5 +1,2 @@
-# bank-application
-# bank application with javaFX
-# Created by:
-#   CHACHI Ayoub
-#   HASNAOUI Aymane
+# Bank application with Java & JavaFX
+# Created by: CHACHI Ayoub / HASNAOUI Aymane
