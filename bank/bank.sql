@@ -1,7 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
---
+
 -- Hôte : 127.0.0.1
 -- Généré le : sam. 23 jan. 2021 à 23:07
 -- Version du serveur :  10.4.17-MariaDB
