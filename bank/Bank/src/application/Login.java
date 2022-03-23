@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.io.IOException;
-import application.creditinfo;
+import application.creditinfo; 
 
 
 
@@ -98,7 +98,7 @@ public class Login {
 		String username=rs.getString(2);
 		String fname=rs.getString(3);
 		
-		String lname=rs.getString(4);
+		String lname=rs.getString(4); 
 		String phoneno=rs.getString(5);
 		String email=rs.getString(6);
 		String dob=rs.getString(7);
