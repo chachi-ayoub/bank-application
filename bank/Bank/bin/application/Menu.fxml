@@ -128,14 +128,14 @@
                                                 </Label>
                                              </children>
                                           </VBox>
-                                          <VBox prefHeight="32.0" prefWidth="85.0">
+                                          <VBox prefHeight="32.0" prefWidth="85.0"> 
                                              <children>
                                                 <Label fx:id="username" prefHeight="24.0" prefWidth="73.0">
                                                    <font>
                                                       <Font name="System Bold Italic" size="11.0" />
                                                    </font>
                                                    <VBox.margin>
-                                                      <Insets left="3.0" />
+                                                      <Insets left="3.0" /> 
                                                    </VBox.margin>
                                                 </Label>
                                              </children>
